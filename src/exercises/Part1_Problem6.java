@@ -28,6 +28,6 @@ public class Part1_Problem6 {
         } else if (userChoose == 2) {
             System.out.println(temperatureInCelsius + 273.15);
         }
-        else System.out.println("Invalid option");
+        else System.out.println("Invalid option.");
     }
 }
