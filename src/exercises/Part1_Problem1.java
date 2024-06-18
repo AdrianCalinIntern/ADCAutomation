@@ -11,10 +11,10 @@ public class Part1_Problem1 {
         int userInput = Integer.parseInt(valueFromUser);
 
         if(userInput % 2 == 0){
-            System.out.println(userInput + ", is even");
+            System.out.println(userInput + ", is even.");
         }
         else{
-            System.out.println(userInput + ", is odd");
+            System.out.println(userInput + ", is odd.");
         }
     }
 }
