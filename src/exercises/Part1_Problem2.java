@@ -17,10 +17,10 @@ public class Part1_Problem2 {
 
         //Verification
         if (userInput == 0)
-                System.out.println("The value is equal to 0");
+                System.out.println("The value is equal to 0.");
         else if (userInput > 0)
-            System.out.println("The value is positive");
+            System.out.println("The value is positive.");
         else
-            System.out.println("The value is negative");
+            System.out.println("The value is negative.");
     }
 }
