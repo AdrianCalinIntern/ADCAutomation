@@ -26,13 +26,13 @@ public class LiveSession {
 
         Scanner input = new Scanner(System.in);
         //User menu
-        System.out.println("1 Check the Balance  \n2 Deposit money  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance into USD or EUR");
+        System.out.println("1 Check the Balance  \n2 Deposit money  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance into USD or EUR \n6 Pay and stash change");
 
         //read the user input
         int userInput = input.nextInt();
 
         //declaring accountBalance and depositBalance
-        double accountBalance = 4.63;
+        double accountBalance = 10;
         double depositBalance = 5;
 
 
@@ -59,6 +59,7 @@ public class LiveSession {
                 System.out.println("Your new balance : " + accountBalance);
             }
         }
+
         else if (userInput == 4){
             System.out.println("Value to transfer to saving account:  ");
             double transferToSavingAccount = input.nextFloat();
@@ -73,6 +74,7 @@ public class LiveSession {
                 System.out.println("New deposit balance: " + depositBalance);
             }
         }
+
         else if (userInput == 5){
             System.out.println("Select : \n 1 for USD \n 2 for EUR");
             int option = input.nextInt();
@@ -83,6 +85,18 @@ public class LiveSession {
                 System.out.println("Account Balance in EUR: " + accountBalance / 0.93);
             else System.out.println("Invalid option");
         }
+
+        else if (userInput == 6) {
+            System.out.println("Payment amount : ");
+            double paymentAmount = input.nextDouble();
+            accountBalance = accountBalance - paymentAmount;
+
+            double change = accountBalance - Math.floor(accountBalance);
+            if (change > 0){
+                depositBalance = depositBalance + change;
+                System.out.println(depositBalance);
+            }
+        }
         else System.out.println("Invalid choose !");
+        }
     }
-}
