@@ -26,7 +26,7 @@ public class LiveSession {
 
         Scanner input = new Scanner(System.in);
         //User menu
-        System.out.println("1 Check the Balance  \n2 Check Deposit  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance into USD or EUR");
+        System.out.println("1 Check the Balance  \n2 Deposit money  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance into USD or EUR");
 
         //read the user input
         int userInput = input.nextInt();
@@ -39,9 +39,14 @@ public class LiveSession {
         if (userInput == 1) {
             System.out.println("Current balance account : " + accountBalance);
         }
+
         else if (userInput == 2) {
-            System.out.println("Deposit balance account : " + depositBalance);
+            System.out.println("Amount to add :");
+            double ammountToAdd = input.nextDouble();
+            accountBalance = accountBalance + ammountToAdd;
+            System.out.println("Your new balance : " + accountBalance);
         }
+
         else if (userInput == 3) {
             System.out.println("Value to transfer to another account: ");
             float transferToAnotherAccount = input.nextFloat();
@@ -69,10 +74,15 @@ public class LiveSession {
             }
         }
         else if (userInput == 5){
-            System.out.println("Account Balance in USD: " + accountBalance * 4.63);
-            System.out.println("Account Balance in EUR: " + accountBalance * 0.93);
+            System.out.println("Select : \n 1 for USD \n 2 for EUR");
+            int option = input.nextInt();
+
+            if(option == 1)
+                System.out.println("Account Balance in USD: " + accountBalance * 4.63);
+            else if (option == 2)
+                System.out.println("Account Balance in EUR: " + accountBalance * 0.93);
+            else System.out.println("Invalid option");
         }
-        else
-            System.out.println("Invalid choose !");
+        else System.out.println("Invalid choose !");
     }
 }
