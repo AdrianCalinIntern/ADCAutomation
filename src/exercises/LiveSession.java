@@ -32,8 +32,8 @@ public class LiveSession {
         int userInput = input.nextInt();
 
         //declaring accountBalance and depositBalance
-        float accountBalance = 10;
-        float depositBalance = 5;
+        double accountBalance = 10;
+        double depositBalance = 5;
 
 
         if (userInput == 1) {
@@ -56,7 +56,7 @@ public class LiveSession {
         }
         else if (userInput == 4){
             System.out.println("Value to transfer to saving account: ");
-            float transferToSavingAccount = input.nextFloat();
+            double transferToSavingAccount = input.nextFloat();
             if (transferToSavingAccount > accountBalance)
             {
                 System.out.println("Insufficient found");
