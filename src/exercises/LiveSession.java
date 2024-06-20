@@ -32,7 +32,7 @@ public class LiveSession {
         int userInput = input.nextInt();
 
         //declaring accountBalance and depositBalance
-        double accountBalance = 10;
+        double accountBalance = 4.63;
         double depositBalance = 5;
 
 
@@ -78,9 +78,9 @@ public class LiveSession {
             int option = input.nextInt();
 
             if(option == 1)
-                System.out.println("Account Balance in USD: " + accountBalance * 4.63);
+                System.out.println("Account Balance in USD: " + accountBalance / 4.63);
             else if (option == 2)
-                System.out.println("Account Balance in EUR: " + accountBalance * 0.93);
+                System.out.println("Account Balance in EUR: " + accountBalance / 0.93);
             else System.out.println("Invalid option");
         }
         else System.out.println("Invalid choose !");
