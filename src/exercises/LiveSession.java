@@ -26,7 +26,7 @@ public class LiveSession {
 
         Scanner input = new Scanner(System.in);
         //User menu
-        System.out.println("1 Check the Balance  \n2 Check Deposit  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance unto USD");
+        System.out.println("1 Check the Balance  \n2 Check Deposit  \n3 Withdraw money \n4 Transfer money to a savings account \n5 Convert account balance into USD or EUR");
 
         //read the user input
         int userInput = input.nextInt();
