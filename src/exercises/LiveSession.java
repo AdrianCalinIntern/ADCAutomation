@@ -55,7 +55,7 @@ public class LiveSession {
             }
         }
         else if (userInput == 4){
-            System.out.println("Value to transfer to saving account: ");
+            System.out.println("Value to transfer to saving account:  ");
             double transferToSavingAccount = input.nextFloat();
             if (transferToSavingAccount > accountBalance)
             {
