@@ -37,7 +37,7 @@ public class LiveSession {
             userInput = input.nextInt();
 
             if (userInput == 1) {
-                System.out.println("Current balance account : " + accountBalance + "\n");
+                System.out.println("Current balance account : " + accountBalance + "RON \n");
             }
 
             else if (userInput == 2) {
