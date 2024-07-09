@@ -29,7 +29,7 @@ public class Part3_Problem1 {
         } else if (language.equals("1")) {
             return "Saluti Lume";
         }else if (language.equals("2")) {
-            return "Hallo Welt";
+            return "Hallo Welt-";
         }
         else return "Sorry, I don't speak that language";
     }
